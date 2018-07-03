@@ -10,10 +10,12 @@
     Scenario:smoke test #2, go to selects the direction country and choice date
       When press button with text "Очистить" in the window on "первая страница"
       When go to select the direction from: Магадан,Санкт-Петербург
-
+@test2
     Scenario: Login
-      Then press button with text "Логин" in the window on "первая страница"
-      When type to input with name "Логин" text: "riskmarket.testoviy2016@yandex.ru" on "первая страница"
+      Given open aeroflot.ru
+      Then press button with text "Личный кабинет" in the window on "первая страница"
+      And user in field "Логин" set text "текст" in the window on "первая страница"
+
 
 
 

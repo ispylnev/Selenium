@@ -13,7 +13,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 //        plugin = {"html:target/cucumber-report/smoketest", "json:target/cucumber.json"},
         features = "src/test/java/ru/aeroflot/features",
         glue = "ru/aeroflot/steps",
-        tags = "@test1"
+        tags = "@test2"
         )
 
 

@@ -25,8 +25,12 @@ public SelenideElement countryTo;
 @FindBy (xpath = ".//*[@id='ttTROri0']/div[2]/div/span[4]")
 public SelenideElement clear;
 
-@NameElement("Логин")
+@NameElement("Личный кабинет")
 @FindBy (xpath = ".//*[@id='header-menu']/a[3]")
+public SelenideElement signUp;
+
+@NameElement("Логин")
+@FindBy (xpath = ".//*[@id='id_login']")
 public SelenideElement login;
 
 }

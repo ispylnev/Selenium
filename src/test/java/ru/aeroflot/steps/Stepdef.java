@@ -10,7 +10,6 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import ru.aeroflot.pageobject.FirstPage;
 import ru.aeroflot.pageobject.SecondPage;
-
 import java.util.List;
 import static com.codeborne.selenide.Selenide.*;
 import static org.openqa.selenium.By.xpath;

@@ -10,18 +10,18 @@ public class User {
     private String avatarUrl;
     private String gravatarId;
     private String url;
-    private String html_url;
-    private String followers_url;
-    private String following_url;
-    private String gists_url;
-    private String starred_url;
-    private String subscriptions_url;
-    private String organizations_url;
-    private String repos_url;
-    private String events_url;
-    private String received_events_url;
+    private String htmlUrl;
+    private String followersUrl;
+    private String followingUrl;
+    private String gistsUrl;
+    private String starredUrl;
+    private String subscriptionsUrl;
+    private String organizationsUrl;
+    private String reposUrl;
+    private String eventsUrl;
+    private String receivedEventsUrl;
     private String type;
-    private Boolean site_admin;
+    private Boolean siteAdmin;
     private String name;
     private String company;
     private String blog;
@@ -29,34 +29,34 @@ public class User {
     private String email;
     private String hireable;
     private String bio;
-    private Integer public_repos;
-    private Integer public_gists;
+    private Integer publicRepos;
+    private Integer publicGists;
     private Integer followers;
     private Integer following;
-    private String created_at;
+    private String createdAt;
     private String updated_at;
 
     public User() {
     }
 
-    public User(String login, Integer id, String avatarUrl, String gravatarId, String url, String html_url, String followers_url, String following_url, String gists_url, String starred_url, String subscriptions_url, String organizations_url, String repos_url, String events_url, String received_events_url, String type, Boolean site_admin, String name, String company, String blog, String location, String email, String hireable, String bio, Integer public_repos, Integer public_gists, Integer followers, Integer following, String created_at, String updated_at) {
+    public User(String login, Integer id, String avatarUrl, String gravatarId, String url, String htmlUrl, String followersUrl, String following_url, String gistsUrl, String starredUrl, String subscriptionsUrl, String organizationsUrl, String reposUrl, String eventsUrl, String receivedEventsUrl, String type, Boolean siteAdmin, String name, String company, String blog, String location, String email, String hireable, String bio, Integer publicRepos, Integer publicGists, Integer followers, Integer following, String createdAt, String updated_at) {
         this.login = login;
         this.id = id;
         this.avatarUrl = avatarUrl;
         this.gravatarId = gravatarId;
         this.url = url;
-        this.html_url = html_url;
-        this.followers_url = followers_url;
-        this.following_url = following_url;
-        this.gists_url = gists_url;
-        this.starred_url = starred_url;
-        this.subscriptions_url = subscriptions_url;
-        this.organizations_url = organizations_url;
-        this.repos_url = repos_url;
-        this.events_url = events_url;
-        this.received_events_url = received_events_url;
+        this.htmlUrl = htmlUrl;
+        this.followersUrl = followersUrl;
+        this.followingUrl = following_url;
+        this.gistsUrl = gistsUrl;
+        this.starredUrl = starredUrl;
+        this.subscriptionsUrl = subscriptionsUrl;
+        this.organizationsUrl = organizationsUrl;
+        this.reposUrl = reposUrl;
+        this.eventsUrl = eventsUrl;
+        this.receivedEventsUrl = receivedEventsUrl;
         this.type = type;
-        this.site_admin = site_admin;
+        this.siteAdmin = siteAdmin;
         this.name = name;
         this.company = company;
         this.blog = blog;
@@ -64,11 +64,11 @@ public class User {
         this.email = email;
         this.hireable = hireable;
         this.bio = bio;
-        this.public_repos = public_repos;
-        this.public_gists = public_gists;
+        this.publicRepos = publicRepos;
+        this.publicGists = publicGists;
         this.followers = followers;
         this.following = following;
-        this.created_at = created_at;
+        this.createdAt = createdAt;
         this.updated_at = updated_at;
     }
 
@@ -112,84 +112,84 @@ public class User {
         this.url = url;
     }
 
-    public String getHtml_url() {
-        return html_url;
+    public String getHtmlUrl() {
+        return htmlUrl;
     }
 
-    public void setHtml_url(String html_url) {
-        this.html_url = html_url;
+    public void setHtmlUrl(String htmlUrl) {
+        this.htmlUrl = htmlUrl;
     }
 
-    public String getFollowers_url() {
-        return followers_url;
+    public String getFollowersUrl() {
+        return followersUrl;
     }
 
-    public void setFollowers_url(String followers_url) {
-        this.followers_url = followers_url;
+    public void setFollowersUrl(String followersUrl) {
+        this.followersUrl = followersUrl;
     }
 
-    public String getFollowing_url() {
-        return following_url;
+    public String getFollowingUrl() {
+        return followingUrl;
     }
 
-    public void setFollowing_url(String following_url) {
-        this.following_url = following_url;
+    public void setFollowingUrl(String followingUrl) {
+        this.followingUrl = followingUrl;
     }
 
-    public String getGists_url() {
-        return gists_url;
+    public String getGistsUrl() {
+        return gistsUrl;
     }
 
-    public void setGists_url(String gists_url) {
-        this.gists_url = gists_url;
+    public void setGistsUrl(String gistsUrl) {
+        this.gistsUrl = gistsUrl;
     }
 
-    public String getStarred_url() {
-        return starred_url;
+    public String getStarredUrl() {
+        return starredUrl;
     }
 
-    public void setStarred_url(String starred_url) {
-        this.starred_url = starred_url;
+    public void setStarredUrl(String starredUrl) {
+        this.starredUrl = starredUrl;
     }
 
-    public String getSubscriptions_url() {
-        return subscriptions_url;
+    public String getSubscriptionsUrl() {
+        return subscriptionsUrl;
     }
 
-    public void setSubscriptions_url(String subscriptions_url) {
-        this.subscriptions_url = subscriptions_url;
+    public void setSubscriptionsUrl(String subscriptionsUrl) {
+        this.subscriptionsUrl = subscriptionsUrl;
     }
 
-    public String getOrganizations_url() {
-        return organizations_url;
+    public String getOrganizationsUrl() {
+        return organizationsUrl;
     }
 
-    public void setOrganizations_url(String organizations_url) {
-        this.organizations_url = organizations_url;
+    public void setOrganizationsUrl(String organizationsUrl) {
+        this.organizationsUrl = organizationsUrl;
     }
 
-    public String getRepos_url() {
-        return repos_url;
+    public String getReposUrl() {
+        return reposUrl;
     }
 
-    public void setRepos_url(String repos_url) {
-        this.repos_url = repos_url;
+    public void setReposUrl(String reposUrl) {
+        this.reposUrl = reposUrl;
     }
 
-    public String getEvents_url() {
-        return events_url;
+    public String getEventsUrl() {
+        return eventsUrl;
     }
 
-    public void setEvents_url(String events_url) {
-        this.events_url = events_url;
+    public void setEventsUrl(String eventsUrl) {
+        this.eventsUrl = eventsUrl;
     }
 
-    public String getReceived_events_url() {
-        return received_events_url;
+    public String getReceivedEventsUrl() {
+        return receivedEventsUrl;
     }
 
-    public void setReceived_events_url(String received_events_url) {
-        this.received_events_url = received_events_url;
+    public void setReceivedEventsUrl(String receivedEventsUrl) {
+        this.receivedEventsUrl = receivedEventsUrl;
     }
 
     public String getType() {
@@ -200,12 +200,12 @@ public class User {
         this.type = type;
     }
 
-    public Boolean getSite_admin() {
-        return site_admin;
+    public Boolean getSiteAdmin() {
+        return siteAdmin;
     }
 
-    public void setSite_admin(Boolean site_admin) {
-        this.site_admin = site_admin;
+    public void setSiteAdmin(Boolean siteAdmin) {
+        this.siteAdmin = siteAdmin;
     }
 
     public String getName() {
@@ -264,20 +264,20 @@ public class User {
         this.bio = bio;
     }
 
-    public Integer getPublic_repos() {
-        return public_repos;
+    public Integer getPublicRepos() {
+        return publicRepos;
     }
 
-    public void setPublic_repos(Integer public_repos) {
-        this.public_repos = public_repos;
+    public void setPublicRepos(Integer publicRepos) {
+        this.publicRepos = publicRepos;
     }
 
-    public Integer getPublic_gists() {
-        return public_gists;
+    public Integer getPublicGists() {
+        return publicGists;
     }
 
-    public void setPublic_gists(Integer public_gists) {
-        this.public_gists = public_gists;
+    public void setPublicGists(Integer publicGists) {
+        this.publicGists = publicGists;
     }
 
     public Integer getFollowers() {
@@ -296,12 +296,12 @@ public class User {
         this.following = following;
     }
 
-    public String getCreated_at() {
-        return created_at;
+    public String getCreatedAt() {
+        return createdAt;
     }
 
-    public void setCreated_at(String created_at) {
-        this.created_at = created_at;
+    public void setCreatedAt(String createdAt) {
+        this.createdAt = createdAt;
     }
 
     public String getUpdated_at() {
@@ -316,24 +316,24 @@ public class User {
 
     @Override
     public String toString() {
-        return "User{" +
+        return "ControlUser{" +
                 "login='" + login + '\'' +
                 ", id=" + id +
                 ", avatar_url='" + avatarUrl + '\'' +
                 ", gravatarId='" + gravatarId + '\'' +
                 ", url='" + url + '\'' +
-                ", html_url='" + html_url + '\'' +
-                ", followers_url='" + followers_url + '\'' +
-                ", following_url='" + following_url + '\'' +
-                ", gists_url='" + gists_url + '\'' +
-                ", starred_url='" + starred_url + '\'' +
-                ", subscriptions_url='" + subscriptions_url + '\'' +
-                ", organizations_url='" + organizations_url + '\'' +
-                ", repos_url='" + repos_url + '\'' +
-                ", events_url='" + events_url + '\'' +
-                ", received_events_url='" + received_events_url + '\'' +
+                ", htmlUrl='" + htmlUrl + '\'' +
+                ", followersUrl='" + followersUrl + '\'' +
+                ", followingUrl='" + followingUrl + '\'' +
+                ", gistsUrl='" + gistsUrl + '\'' +
+                ", starredUrl='" + starredUrl + '\'' +
+                ", subscriptionsUrl='" + subscriptionsUrl + '\'' +
+                ", organizationsUrl='" + organizationsUrl + '\'' +
+                ", reposUrl='" + reposUrl + '\'' +
+                ", eventsUrl='" + eventsUrl + '\'' +
+                ", receivedEventsUrl='" + receivedEventsUrl + '\'' +
                 ", type='" + type + '\'' +
-                ", site_admin=" + site_admin +
+                ", siteAdmin=" + siteAdmin +
                 ", name='" + name + '\'' +
                 ", company='" + company + '\'' +
                 ", blog='" + blog + '\'' +
@@ -341,12 +341,14 @@ public class User {
                 ", email='" + email + '\'' +
                 ", hireable='" + hireable + '\'' +
                 ", bio='" + bio + '\'' +
-                ", public_repos=" + public_repos +
-                ", public_gists=" + public_gists +
+                ", publicRepos=" + publicRepos +
+                ", publicGists=" + publicGists +
                 ", followers=" + followers +
                 ", following=" + following +
-                ", created_at='" + created_at + '\'' +
+                ", createdAt='" + createdAt + '\'' +
                 ", updated_at='" + updated_at + '\'' +
                 '}';
+
+
     }
 }

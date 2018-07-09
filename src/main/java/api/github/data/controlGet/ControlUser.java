@@ -13,18 +13,19 @@ public class ControlUser {
     }
 
     public User GetUserByName(String nameUser) {
-       User user = restTemplate.getForObject(API_BASE +"users/" + nameUser , User.class);
+       User user = restTemplate.getForObject(API_BASE + "users/" + nameUser , User.class);
       return user;
 
     }
 
-//    public <T> T getFollowersByUser(Class <?> clazz){
-    public User[] getFollowersByUser(String nameUser){
-//        Object object = restTemplate.getForObject(API_BASE + "followers/" , clazz.getClass());
-//        String s="s";
-//        return (T) object;
-        User[] user = restTemplate.getForObject(API_BASE + nameUser + "/followers/" ,User[].class);
-        return user;
+    public <T> T getFollowersByUser(String userName , Class <?> clazz){
+//    public User[] getFollowersByUser(String nameUser){
+        Object object = restTemplate.getForObject(API_BASE + "users/" + userName + "/followers"  , clazz);
+        String s="s";
+        return (T) object;
+//        User[] user = restTemplate.getForObject(API_BASE + "users/" + nameUser + "/followers" ,User[].class);
+//        return user;
     }
 
 }
+//https://api.github.com/users/Mak0/followers

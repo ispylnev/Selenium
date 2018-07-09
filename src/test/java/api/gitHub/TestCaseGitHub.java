@@ -22,8 +22,8 @@ public class TestCaseGitHub {
     }
     @Test
     public void followersUser(){
-        User[] followers = controlUser.getFollowersByUser("ispylnev");
-//        User[]followers = controlUser.getFollowersByUser(User[].class);
+//        User[] followers = controlUser.getFollowersByUser("ispylnev");
+        User[]followers = controlUser.getFollowersByUser("ispylnev", User[].class);
         assertTrue(followers.length == 0);
 
     }

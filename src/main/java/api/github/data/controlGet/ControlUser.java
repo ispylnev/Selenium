@@ -19,13 +19,9 @@ public class ControlUser {
     }
 
     public <T> T getFollowersByUser(String userName , Class <?> clazz){
-//    public User[] getFollowersByUser(String nameUser){
         Object object = restTemplate.getForObject(API_BASE + "users/" + userName + "/followers"  , clazz);
-        String s="s";
         return (T) object;
-//        User[] user = restTemplate.getForObject(API_BASE + "users/" + nameUser + "/followers" ,User[].class);
-//        return user;
+
     }
 
 }
-//https://api.github.com/users/Mak0/followers
